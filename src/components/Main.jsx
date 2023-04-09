@@ -5,12 +5,12 @@ export const Main = () => {
         <>
             <div className="main d-flex align-items-center justify-content-center">
                 <div className="cover"></div>
-                <h1>
+                <h1 className='givi'>
                     My name is Givi,<br/>a <span>
                         Full-Stack Developer
                     </span>
                 </h1>
-                <p>
+                <p className='open'>
                     My mission is to help your business grow through my conversion focused branding, design, marketing, and communication expertise.
                 </p>
                 <button>Discover my work</button>

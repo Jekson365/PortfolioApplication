@@ -176,7 +176,7 @@ export const Projects = () => {
                     <>
                         <div className="container-fluid mw-1300 project-parent" style={{ "min-height": "50vh" }}>
                             <div className="daz row h-100 align-items-center">
-                                <div className="col-md-7 cont-box  d-flex flex-column p-5">
+                                <div className="col-md-7 cont-box d-flex flex-column p-5">
                                     <h1 className='title'>{each.name}</h1>
                                     <p className='desc'>{each.description}</p>
                                     <div className="row buttons">
