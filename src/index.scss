@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Raleway:wght@300;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Lalezar&family=Raleway:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=KoHo&family=Lalezar&family=Raleway:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=KoHo&family=Krub:wght@200&family=Lalezar&family=Raleway:wght@300;500&display=swap');
 // font-family: 'Itim', cursive;
 
 * {
@@ -11,23 +13,78 @@
 .switch-icon {
     display: none;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 
 .mh-50 {
     min-height: 50vh;
 }
 
-// .daz {
-//     flex-direction: row-reverse !important;
-// }
+.project-parent {
+    @media screen and (max-width:800px) {
+        & {
+            max-width: 500px !important;
+        }
+    }
+    max-width: 1600px !important;
+    &:nth-child(even) {
+        .daz {
+            flex-direction: row-reverse !important;
+        }
+
+    }
+    .mw-1300 {
+    }
+    .cont-box {
+    }
+
+    .title {
+        text-transform: capitalize;
+        font-family: 'KoHo', sans-serif;
+    }
+
+    .desc {
+        font-family: 'Krub', sans-serif;
+        font-weight: 700;
+        margin: 50px 0;
+        font-size: 18px;
+        letter-spacing: 1px;
+        @media screen and (max-width:968px) {
+            & {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .buttons {
+        button {
+            width: 130px !important;
+            border: 0;
+            border-radius: 40px;
+            outline: 0;
+            font-size: 15px;
+            padding: 10px 15px;
+            margin: 5px;
+            &:nth-child(odd) {
+                background-color: #ffcc00;
+            }
+            &:nth-child(even) {
+                border: 2px solid #ffcc00;
+            }
+        }
+    }
+}
+
 
 .sxz {
     overflow: hidden;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     box-shadow: 0 0 40px 0.1px rgba(0, 0, 0, 0.281);
-    
     img {
         width: 110%;
         height: 80%;
@@ -185,8 +242,13 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    transition: 0.3s;
     margin: 50px;
-
+    &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+        border: 9px solid #ffcc00;
+    }
     img {
         object-fit: cover;
     }

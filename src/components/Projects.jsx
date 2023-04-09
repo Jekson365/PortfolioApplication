@@ -7,7 +7,7 @@ import Image5 from '../assets/assets/cuisine.png'
 import Image6 from '../assets/assets/movies.png'
 import Image7 from '../assets/assets/cover-7.png'
 import Image8 from '../assets/assets/mupando.png'
-import Image9 from '../assets/assets/observer.png'
+import Image9 from '../assets/assets/dozai.png'
 import Image10 from '../assets/assets/nyumba.png'
 import Image11 from '../assets/assets/beog.png'
 import Image12 from '../assets/assets/system.png'
@@ -132,7 +132,7 @@ export const Projects = () => {
         {
             name: "Nyumba Clone",
             description: "webflow.io website template clone.coded in React-JS using libraries such as Bootstrap,SASS,AOS,framer-motion",
-            img:Image10,
+            img: Image10,
             demo: "https://jekson365.github.io/nyumba",
             source: "https://github.com/Jekson365/nyumba",
             tools: [
@@ -174,18 +174,21 @@ export const Projects = () => {
             {projects.reverse().map((each) => {
                 return (
                     <>
-                        <div className="container" style={{ "height": "50vh" }}>
+                        <div className="container-fluid mw-1300 project-parent" style={{ "min-height": "50vh" }}>
                             <div className="daz row h-100 align-items-center">
-                                <div className="col-md-6 d-flex flex-column">
-                                    <h1>{each.name}</h1>
-                                    <p>{each.description}</p>
-                                    <div className="row">
-                                        <button className='w-25'>dasdas</button>
-                                        <button className='w-25'>dasdas</button>
+                                <div className="col-md-7 cont-box  d-flex flex-column p-5">
+                                    <h1 className='title'>{each.name}</h1>
+                                    <p className='desc'>{each.description}</p>
+                                    <div className="row buttons">
+                                        <button className='w-25'>
+                                            <a href={each.demo}>
+                                                Demo
+                                            </a>
+                                        </button>
+                                        <button className='w-25'><a href={each.source}>Source Code</a></button>
                                     </div>
                                 </div>
-                                <div className="col-md-6 sxz"
-                                >
+                                <div className="col-md-5 sxz">
                                     <img src={each.img} alt="" />
                                 </div>
                             </div>
