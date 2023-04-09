@@ -11,6 +11,8 @@ import Image9 from '../assets/assets/dozai.png'
 import Image10 from '../assets/assets/nyumba.png'
 import Image11 from '../assets/assets/beog.png'
 import Image12 from '../assets/assets/system.png'
+import 'aos/dist/aos.css'
+import isEven from 'is-even'
 
 export const Projects = () => {
 
@@ -174,7 +176,7 @@ export const Projects = () => {
             {projects.reverse().map((each) => {
                 return (
                     <>
-                        <div className="container-fluid mw-1300 project-parent" style={{ "min-height": "50vh" }}>
+                        <div data-aos='fade-up' className="container-fluid mw-1300 project-parent" style={{ "min-height": "50vh" }}>
                             <div className="daz row h-100 align-items-center">
                                 <div className="col-md-7 cont-box d-flex flex-column p-5">
                                     <h1 className='title'>{each.name}</h1>
@@ -188,7 +190,7 @@ export const Projects = () => {
                                         <button className='w-25'><a href={each.source}>Source Code</a></button>
                                     </div>
                                 </div>
-                                <div className="col-md-5 sxz">
+                                <div className="col-md-5 sxz" data-aos={isEven(projects.indexOf(each)) ? "flip-left" : "flip-right"} data-aos-duration='1000'>
                                     <img src={each.img} alt="" />
                                 </div>
                             </div>
