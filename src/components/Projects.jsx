@@ -11,6 +11,7 @@ import Image9 from '../assets/assets/dozai.png'
 import Image10 from '../assets/assets/nyumba.png'
 import Image11 from '../assets/assets/beog.png'
 import Image12 from '../assets/assets/system.png'
+import Image13 from '../assets/assets/analasad.png'
 import 'aos/dist/aos.css'
 import isEven from 'is-even'
 
@@ -169,7 +170,20 @@ export const Projects = () => {
                 './assets/atom.png',
                 './assets/bootstrap.png'
             ]
-        }
+        },
+        {
+            name: "Analytics Page",
+            description: "MY first project using Material-UI. I just created simple visual to demonstrate what I learned in past one week. Tools and Libraries I Used are: React,Typescript,Material-UI,recharts,react-reveal",
+            img: Image13,
+            demo: "https://64672428bfe24a4f7b9070ec--ubiquitous-dieffenbachia-8b8a82.netlify.app/",
+            source: "https://github.com/Jekson365/constClone",
+            tools: [
+                './assets/js.png',
+                './assets/html.png',
+                './assets/atom.png',
+                './assets/bootstrap.png'
+            ]
+        },
     ]
     return (
         <>
